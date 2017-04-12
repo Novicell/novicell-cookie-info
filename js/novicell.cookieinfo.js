@@ -1,6 +1,7 @@
 'use strict';
 /**
-* @desc Cookie info dialog plugin
+* @name Novicell Cookie info
+* @desc Cookie information dialog used to show a short text about, the use of cookies for the website, due to european laws.
 * @author Danni Larsen - DLA & Michael Sølvsteen - MSL
 * @example novicell.cookieInfo.init();
 * @requires none

@@ -1,0 +1,23 @@
+{
+  "name": "novicell-cookie-info",
+  "version": "1.0.0",
+  "description": "Cookie information dialog used to show a short text about, the use of cookies for the website, due to european laws.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Novicell/novicell-cookie-info.git"
+  },
+  "keywords": [
+    "cookie",
+    "novicell"
+  ],
+  "author": "Danni Larsen <dla@novicell.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Novicell/novicell-cookie-info/issues"
+  },
+  "homepage": "https://github.com/Novicell/novicell-cookie-info#readme"
+}
