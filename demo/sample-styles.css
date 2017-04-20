@@ -1,0 +1,70 @@
+/*
+ * Only for demo purposes
+ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/**
+  * @desc Cookie info dialog styling example
+  * @author Danni Larsen - DLA
+  * @requires a less compiler
+*/
+.cookie-info {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #d6d6d6;
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+  transform: translate3d(0, 100%, 0);
+  opacity: 0;
+  z-index: 999;
+}
+
+.cookie-info-open {
+  left: 20px;
+  bottom: 0;
+  border: none;
+  background-color: #d6d6d6;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 2px 2px 0 0;
+  transition: all .3s;
+  position: fixed;
+  opacity: .6;
+  cursor: pointer;
+  will-change: transform;
+}
+
+.cookie-info-open:hover {
+  opacity: 1;
+}
+
+.cookie-info__close {
+  margin-left: auto;
+}
+
+.cookie-info__text {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.cookie-info__text p {
+  margin: 6px 0 0;
+}
+
+body.cookie-info-show .cookie-info {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+body.cookie-info-show .cookie-info-open {
+  opacity: 0;
+}

@@ -11,13 +11,13 @@
     bottom: 0;
     width: 100%;
     background: #d6d6d6;
-    padding: 30px 0;
+    padding: 15px;
     transition: .3s ease-in-out;
     transform: translate3d(0,100%,0); // Hide by default
     opacity: 0;
     z-index: 999;
 
-    &__open {
+    &-open {
         left: 20px;
         bottom: 0;
         border: none;
@@ -41,7 +41,8 @@
     }
 
     &__text {
-        .container();
+        max-width: 1000px;
+        margin: 0 auto;
         display: flex;
 
         p { margin: 6px 0 0; }

@@ -13,7 +13,22 @@ npm install novicell-cookie-info --save
 
 ## Setup
 
-First include the js file in your js bundle or in your HTML like this:
+First make some HTML using the these id's, for the JS to work:
+
+**Markup**
+```html
+<button class="cookie-info-open" id="js-cookie-info-open">
+    Cookies?
+</button>
+<section class="cookie-info" id="js-cookie-info">
+    <div class="cookie-info__text">
+        <p>We're using cookies on this website, is that OK with you?</p>
+        <button class="cookie-info__close button" id="js-cookie-info-close">Fine with me :)</button>
+    </div>
+</section>
+```
+
+Then include the js file in your js bundle or in your HTML:
 
 **JS bundle**
 ```javascript
@@ -28,7 +43,7 @@ scripts: [
     <script src="/node_modules/novicell-cookie-info/js/novicell.cookieinfo.js"></script>
 ```
 
-Then call the `init`-method from your `master.js`:
+Then call the `init`-method from your `master.js`-file:
 ```javascript
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -67,10 +82,10 @@ scripts: [
 **HTML**
 ```html
     <script src="/node_modules/novicell-cookie-info/js/novicell.cookieinfo.js"></script>
-    <script src="/js/components/novicell.cookieinfo.extentions.js"></script>
+    <script src="/scripts/components/novicell.cookieinfo.extentions.js"></script>
 ```
 
-Then call the `init`-method from your `master.js`:
+Then call the `test`-method from your `master.js`:
 ```javascript
 
 document.addEventListener("DOMContentLoaded", function() {

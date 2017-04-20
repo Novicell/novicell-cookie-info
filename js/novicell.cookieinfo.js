@@ -46,6 +46,7 @@ novicell.cookieInfo = novicell.cookieInfo || new function () {
             }
         }
     };
+
 }();
 
 // Functions for opening an closing the cookie-info
@@ -61,8 +62,6 @@ function hideInfo(){
 
 /* Cookie helper functions
 *******************************/
-
-// Get cookie
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -74,7 +73,6 @@ function getCookie(cname) {
     return "";
 }
 
-// Set cookie
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 60 * 60 * 1000 * 24));

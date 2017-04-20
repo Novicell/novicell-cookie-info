@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Novicell cookie info</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/demo/sample-styles.css">
+</head>
+<body>
+  <mark>Make sure to setup a webserver for this demo to work, as you can't set cookies without a domain!</mark>
+
+  <button class="cookie-info-open" id="js-cookie-info-open">
+    Cookies?
+  </button>
+  <section class="cookie-info" id="js-cookie-info">
+    <div class="cookie-info__text">
+      <p>We're using cookies on this website, is that OK with you?</p>
+      <button class="cookie-info__close button" id="js-cookie-info-close">Fine with me :)</button>
+    </div>
+  </section>
+
+  <script src="../js/novicell.cookieinfo.js"></script>
+
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      novicell.cookieInfo.init();
+    });
+  </script>
+</body>
+</html>
