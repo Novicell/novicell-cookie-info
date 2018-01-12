@@ -21,8 +21,8 @@ First make some HTML using the these id's, for the JS to work:
     Cookies?
 </button>
 <section class="cookie-info" id="js-cookie-info">
-    <div class="cookie-info__text">
-        <p>We're using cookies on this website, is that OK with you?</p>
+    <div class="cookie-info__content">
+        <p class="cookie-info__text">We're using cookies on this website, is that OK with you?</p>
         <button class="cookie-info__close button" id="js-cookie-info-close">Fine with me :)</button>
     </div>
 </section>

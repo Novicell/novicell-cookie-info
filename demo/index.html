@@ -3,7 +3,18 @@
 <head>
   <title>Novicell cookie info</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="/demo/sample-styles.css">
+  <link rel="stylesheet" href="/css/components.cookie-info.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: sans-serif; }
+
+    :root {
+        --cookie-info-bg-color: red;
+        --cookie-info-text-color: blue;
+        --cookie-info-close-bg-color: green;
+        --cookie-info-close-text-color: yellow;
+    }
+  </style>
 </head>
 <body>
   <mark>Make sure to setup a hostname for this demo to work, as you can't set cookies without a domain!</mark>
@@ -12,8 +23,8 @@
     Cookies?
   </button>
   <section class="cookie-info" id="js-cookie-info">
-    <div class="cookie-info__text">
-      <p>We're using cookies on this website, is that OK with you?</p>
+    <div class="cookie-info__content">
+      <p class="cookie-info__text">We're using cookies on this website, is that OK with you?</p>
       <button class="cookie-info__close button" id="js-cookie-info-close">Fine with me :)</button>
     </div>
   </section>
