@@ -1,4 +1,7 @@
 # Novicell Cookie Info
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Novicell/novicell-cookie-info.svg)](https://greenkeeper.io/)
+
 **Cookie information dialog used to show a short text about, the use of cookies for the website, due to european laws.**
 
 ## Usage
