@@ -7,6 +7,7 @@
   <style>
     * { box-sizing: border-box; }
     body { font-family: sans-serif; }
+    .withdraw-cookie { color: blue; text-decoration: underline; cursor: pointer;}
 
     :root {
         --cookie-info-bg-color: deeppink;
@@ -19,6 +20,11 @@
 </head>
 <body>
   <mark>Make sure to setup a hostname for this demo to work, as you can't set cookies without a domain!</mark>
+
+  <p>
+    Test of cookie withdrawal from RTE content:
+    <span class="withdraw-cookie" onclick="novicell.cookieInfo.declineCookieInfo()">Withdraw your consent of cookies, on this webpage</span>
+  </p>
 
   <button class="cookie-info-open" id="js-cookie-info-open">
     Cookies?

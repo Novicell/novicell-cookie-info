@@ -18,13 +18,15 @@ First make some HTML using the these id's, for the JS to work:
 **Markup**
 ```html
 <button class="cookie-info-open" id="js-cookie-info-open">
-    Cookies?
+  Cookies?
 </button>
 <section class="cookie-info" id="js-cookie-info">
-    <div class="cookie-info__content">
-        <p class="cookie-info__text">We're using cookies on this website, is that OK with you?</p>
-        <button class="cookie-info__close button" id="js-cookie-info-close">Fine with me :)</button>
-    </div>
+  <div class="cookie-info__content">
+    <button class="cookie-info__close" id="js-cookie-info-close">&times;</button>
+    <p class="cookie-info__text">We're using cookies on this website, is that OK with you?</p>
+    <button class="cookie-info__accept button" id="js-cookie-info-accept">Fine with me :)</button>
+    <button class="cookie-info__decline button" id="js-cookie-info-decline">Me no likie :(</button>
+  </div>
 </section>
 ```
 
@@ -50,6 +52,14 @@ document.addEventListener("DOMContentLoaded", function() {
     novicell.cookieInfo.init();
     ...
 });
+```
+
+## Withdraw consent
+
+If you need to withdraw the cookie consent, you can call the `declineCookieInfo` like this:
+
+```html
+<span onclick="novicell.cookieInfo.declineCookieInfo()">Withdraw your consent of cookies, on this webpage</span>
 ```
 
 ## Extension
