@@ -9,10 +9,11 @@
     body { font-family: sans-serif; }
 
     :root {
-        --cookie-info-bg-color: red;
-        --cookie-info-text-color: blue;
-        --cookie-info-close-bg-color: green;
-        --cookie-info-close-text-color: yellow;
+        --cookie-info-bg-color: deeppink;
+        --cookie-info-text-color: rebeccapurple;
+        --cookie-info-open-bg-color: green;
+        --cookie-info-open-text-color: yellow;
+        --cookie-info-close-color: white;
     }
   </style>
 </head>
@@ -24,8 +25,10 @@
   </button>
   <section class="cookie-info" id="js-cookie-info">
     <div class="cookie-info__content">
+      <button class="cookie-info__close" id="js-cookie-info-close">&times;</button>
       <p class="cookie-info__text">We're using cookies on this website, is that OK with you?</p>
-      <button class="cookie-info__close button" id="js-cookie-info-close">Fine with me :)</button>
+      <button class="cookie-info__accept button" id="js-cookie-info-accept">Fine with me :)</button>
+      <button class="cookie-info__decline button" id="js-cookie-info-decline">Me no likie :(</button>
     </div>
   </section>
 
