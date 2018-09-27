@@ -55,6 +55,7 @@ novicell.cookieInfo = novicell.cookieInfo || new function () {
                 cookieDecline.addEventListener('click', function(e) {
                     self.hideInfo();
                     self.declineCookieInfo();
+                    cookieInfo.classList.remove('cookie-info-accepted');
                 });
             }
         }
