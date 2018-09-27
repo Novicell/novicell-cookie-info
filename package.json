@@ -1,6 +1,6 @@
 {
   "name": "novicell-cookie-info",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Cookie information dialog used to show a short text about, the use of cookies for the website, due to european laws.",
   "main": "index.js",
   "scripts": {
